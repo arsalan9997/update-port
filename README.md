@@ -27,3 +27,30 @@ npm run preview
 ```
 
 No GitHub connection is required to run this ZIP.
+
+
+## Docker
+
+Build the image:
+
+```bash
+docker build -t mudassir-portfolio .
+```
+
+Run the container:
+
+```bash
+docker run -d --name mudassir-portfolio -p 8080:80 mudassir-portfolio
+```
+
+Open:
+
+```text
+http://localhost:8080
+```
+
+For AWS EC2, allow TCP port `8080` in the Security Group and open:
+
+```text
+http://EC2-PUBLIC-IP:8080
+```
